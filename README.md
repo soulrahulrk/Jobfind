@@ -1,4 +1,4 @@
-# Local Job Finder for Rahul
+# Jobfind
 
 Local-first job search dashboard for fresher AI/ML, Data Science, Python, FastAPI, LLM, NLP, CV, and Data Analyst roles.
 

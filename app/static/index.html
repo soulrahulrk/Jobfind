@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rahul Job Finder</title>
+    <link rel="stylesheet" href="/static/styles.css?v=20260524b">
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <h1>Rahul Job Finder</h1>
+        <p id="profileLine">Local fresher AI/ML and Python job tracker</p>
+      </div>
+      <div class="actions">
+        <button id="reloadProfileBtn" class="secondary" type="button">Reload resume</button>
+        <button id="scanBtn" class="primary" type="button">Scan jobs</button>
+      </div>
+    </header>
+
+    <main class="layout">
+      <aside class="filters" aria-label="Job filters">
+        <section class="panel">
+          <h2>Filters</h2>
+          <label>
+            Search
+            <input id="q" type="search" placeholder="Python, LLM, FastAPI">
+          </label>
+          <label>
+            Source
+            <select id="source"></select>
+          </label>
+          <label>
+            Status
+            <select id="status">
+              <option value="">All statuses</option>
+              <option value="new">New</option>
+              <option value="saved">Saved</option>
+              <option value="applied">Applied</option>
+              <option value="interview">Interview</option>
+              <option value="offer">Offer</option>
+              <option value="rejected">Rejected</option>
+            </select>
+          </label>
+          <label>
+            Minimum score
+            <input id="minScore" type="range" min="0" max="100" value="50">
+            <span id="scoreValue">50</span>
+          </label>
+          <label class="check">
+            <input id="remote" type="checkbox">
+            Remote only
+          </label>
+          <label class="check">
+            <input id="salaryFloor" type="checkbox">
+            Keep INR 10,000+ roles
+          </label>
+        </section>
+
+        <section class="panel">
+          <h2>Profile</h2>
+          <dl id="profileBox" class="profile-box"></dl>
+        </section>
+
+        <section class="panel">
+          <h2>Saved searches</h2>
+          <div id="savedSearches" class="saved-searches"></div>
+        </section>
+      </aside>
+
+      <section class="content">
+        <div class="summary-grid">
+          <div class="metric">
+            <span id="jobCount">0</span>
+            <small>ranked jobs</small>
+          </div>
+          <div class="metric">
+            <span id="topScore">0</span>
+            <small>top score</small>
+          </div>
+          <div class="metric">
+            <span id="appliedCount">0</span>
+            <small>applied</small>
+          </div>
+        </div>
+
+        <div id="statusLine" class="status-line">Ready.</div>
+        <div id="jobs" class="jobs" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <script src="/static/app.js?v=20260524b" defer></script>
+  </body>
+</html>

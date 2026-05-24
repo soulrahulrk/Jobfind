@@ -1,0 +1,15 @@
+RAHUL CANDIDATE
+India
++91-9999999999
+rahul.candidate@example.local
+SUMMARY
+Aspiring AI/ML Engineer with hands-on experience building LLM-powered applications.
+TECHNICAL SKILLS
+Languages: Python, SQL
+ML/AI Frameworks: Scikit-learn, TensorFlow, LangChain, LangGraph, NumPy, Pandas, OpenCV
+Tools & Platforms: Git, Docker, FastAPI, Power BI
+Databases: PostgreSQL, MySQL, Vector Databases (ChromaDB)
+PROJECTS
+AI Voyage Estimation & Decision System
+SHL Assessment Recommendation Engine
+Placement LLM - College Placement Management System
